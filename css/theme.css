@@ -1,0 +1,98 @@
+.dropdown {
+  cursor: pointer;
+}
+
+.table th[st-sort] {
+  cursor: pointer;
+}
+
+.table th[st-sort] > span.sort-indicator {
+  padding-right: 18px;
+  position: relative;
+}
+
+.table th[st-sort] > span.sort-indicator:after,
+.table th[st-sort] > span.sort-indicator:before {
+  content: "";
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #000 transparent;
+  visibility: visible;
+  right: 5px;
+  top: 50%;
+  position: absolute;
+  opacity: 0.3;
+  margin-top: -4px;
+}
+.table th[st-sort] > span.sort-indicator:before {
+  margin-top: 2px;
+  border-bottom: none;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #000;
+}
+
+.table th[st-sort] > span.sort-indicator:after,
+.table th[st-sort] > span.sort-indicator:before {
+  opacity: 0.3;
+  visibility: visible;
+}
+
+.table th[st-sort].st-sort-descent,
+.table th[st-sort].st-sort-ascent {
+  background-color: rgba(141, 192, 219, 0.25);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+.table th[st-sort].st-sort-descent > span.sort-indicator:after,
+.table th[st-sort].st-sort-ascent > span.sort-indicator:after {
+  margin-top: -2px;
+}
+
+.table th[st-sort].st-sort-descent > span.sort-indicator:before,
+.table th[st-sort].st-sort-ascent > span.sort-indicator:before {
+  visibility: hidden;
+}
+
+.table th[st-sort].st-sort-ascent > span.sort-indicator:after,
+.table th[st-sort].st-sort-ascent > span.sort-indicator:hover:after {
+  visibility: visible;
+  filter: alpha(opacity=60);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+.table th[st-sort].st-sort-descent > span.sort-indicator:after {
+  border-bottom: none;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #000;
+  visibility: visible;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  filter: alpha(opacity=60);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+.select-page {
+  width: 50px;
+  text-align: center;
+}
+.pagination li a input {
+  padding: 0;
+  margin: -5px 0;
+}
+
+.btn-default:focus {
+    background-color: #fff;
+    border-color: #ccc;
+    outline: 0;
+}
+
+.bit-na {
+	background-color: #eee;
+}
