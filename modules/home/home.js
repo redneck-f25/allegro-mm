@@ -1,5 +1,13 @@
 /// <reference path="../../typings/tsd.d.ts" />
 "use strict";
+( function() {
+    var link = document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = './favicon.ico';
+    document.head.appendChild(link);
+});
+
 angular.module("mmWeb.home", ["ui.router"]);
 angular.module("mmWeb.home").config(function ($stateProvider) {
     $stateProvider.state("dashboard", {
